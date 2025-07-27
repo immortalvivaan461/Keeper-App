@@ -1,0 +1,11 @@
+.Footer_items{
+    position: fixed;
+    bottom: 0px;
+    border-top: 1p solid gray;
+    background-color: gray;
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

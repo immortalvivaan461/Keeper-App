@@ -1,0 +1,74 @@
+form {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: azure;
+}
+
+.Inputform {
+    width: clamp(90%, 40%, 600px);
+    /* responsive width */
+    display: flex;
+    flex-direction: column;
+    /* stack on mobile */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.InputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    /* responsive font */
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    width: 100%;
+}
+
+button {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Responsive container */
+@media (min-width: 768px) {
+    .Inputform {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .InputBox {
+        width: 45%;
+    }
+
+    button {
+        align-self: center;
+    }
+}
