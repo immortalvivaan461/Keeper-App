@@ -29,14 +29,18 @@ Folder Structure:
     - index.html
 - src/
     - components/
+
     -IOHandler.jsx
     -IOHandler.css
+
     - DataList/
         -ShowCard.jsx
         -ShowCard.css
+
     -Form/
         -InoutForm.jsx
         -InoutForm.css
+
     - UI/
         - Header.jsx
         - Header.css
