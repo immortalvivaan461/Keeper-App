@@ -39,12 +39,12 @@ const InputForm = (props) => {
             <div className='Inputform'>
                 <div className='InputBox'>
                     <label htmlFor='title'>Title:</label>
-                    <input id="title" type="text" value={title} onChange={titleChangeHandler} placeholder='Enter Title' />
+                    <input id="title" type="text" value={title} onChange={titleChangeHandler} placeholder='Enter Title' required />
                 </div>
                 <div className='InputBox'>
                     <label htmlFor='description'>Description:</label>
                     
-                    <textarea id="description" type="text" value={description} onChange={descriptionChangeHandler} placeholder='Enter Description' ></textarea>
+                    <textarea id="description" type="text" value={description} onChange={descriptionChangeHandler} placeholder='Enter Description' required ></textarea>
                 </div>
 
                 <button type='submit'>Submit</button>
