@@ -40,10 +40,16 @@ function App() {
     });
   }
 
+  const handleEdit = (id, updatedData) => {
+    setUpdatedlist(prevList =>
+      prevList.map(item => item.id === id ? { ...item, ...updatedData } : item)
+    );
+  };
+
   return (
     <>
       <Header />
-      <InputHandler Tasks={updatedlist} getData={getDatafrommiddle} deleteReq ={handleDelete}/>
+      <InputHandler Tasks={updatedlist} getData={getDatafrommiddle} deleteReq={handleDelete} editReq={handleEdit} />
       <Footer />
     </>
   )

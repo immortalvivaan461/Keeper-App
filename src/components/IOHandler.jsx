@@ -15,6 +15,9 @@ const InputHandler = (props) => {
         props.deleteReq(deleteitm)
     }
 
+    const editItem = (id, updatedData) => {
+        props.editReq(id, updatedData);
+    };
 
     return (
         <div className='body'>
@@ -23,8 +26,9 @@ const InputHandler = (props) => {
             </div>
             <hr />
             <div className='Output_handler'>
-                <ShowCard allData={props.Tasks} onDelete={deleteItem} />
+                <ShowCard allData={props.Tasks} onDelete={deleteItem} onEdit={editItem} />
             </div>
+            
         </div>
     )
 }
